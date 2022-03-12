@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    app:startDestination="@id/peopleListFragment">
+
+    <!-- Instance of people_list_fragment -->
+    <fragment
+        android:id="@+id/peopleListFragment"
+        android:name="com.jordan.peopleofstarwars.PeopleListFragment"
+        tools:layout="@layout/people_list_fragment">
+        <action
+            android:id="@+id/openPersonDetails"
+            app:destination="@id/person_details_fragment"/>
+    </fragment>
+
+    <!-- Instance of person_details_fragment -->
+    <fragment
+        android:id="@+id/person_details_fragment"
+        android:name="com.jordan.peopleofstarwars.PersonDetailsFragment"
+        tools:layout="@layout/person_details_fragment">
+        <argument
+            android:name="personID"
+            app:argType="string"/>
+    </fragment>
+
+</navigation>

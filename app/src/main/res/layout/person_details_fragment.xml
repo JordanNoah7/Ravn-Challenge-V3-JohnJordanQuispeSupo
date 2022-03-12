@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/ravn_black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/vector"
+        android:layout_width="16.03dp"
+        android:layout_height="16dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="19dp"
+        android:background="@drawable/union"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="155dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:letterSpacing="0.01"
+        android:text="@string/people"
+        android:textColor="@android:color/white"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/rectangle_information"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="246dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.01"
+        android:text="@string/general_information"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_information" />
+
+    <View
+        android:id="@+id/rectangle_eyes"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_information"/>
+
+    <TextView
+        android:id="@+id/eye"
+        android:layout_width="317dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        android:text="@string/eye_color"
+        android:textColor="@color/text_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_eyes" />
+
+    <TextView
+        android:id="@+id/eye_color"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        tools:text="color"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_eyes" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_eyes"
+        android:background="#1A000000"/>
+
+    <View
+        android:id="@+id/rectangle_hair"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_eyes"/>
+
+    <TextView
+        android:id="@+id/hair"
+        android:layout_width="317dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        android:text="@string/hair_color"
+        android:textColor="@color/text_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_hair" />
+
+    <TextView
+        android:id="@+id/hair_color"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        tools:text="color"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_hair" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_hair"
+        android:background="#1A000000"/>
+
+    <View
+        android:id="@+id/rectangle_skin"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_hair"/>
+
+    <TextView
+        android:id="@+id/skin"
+        android:layout_width="317dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        android:text="@string/skin_color"
+        android:textColor="@color/text_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_skin" />
+
+    <TextView
+        android:id="@+id/skin_color"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        tools:text="color"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_skin" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_skin"
+        android:background="#1A000000"/>
+
+    <View
+        android:id="@+id/rectangle_birth"
+        android:layout_width="wrap_content"
+        android:layout_height="49dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_skin"/>
+
+    <TextView
+        android:id="@+id/birth"
+        android:layout_width="317dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        android:text="@string/birth_year"
+        android:textColor="@color/text_light"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_birth" />
+
+    <TextView
+        android:id="@+id/birth_year"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="14dp"
+        android:letterSpacing="0.01"
+        tools:text="year"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_birth" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_birth"
+        android:background="#1A000000"/>
+
+    <View
+        android:id="@+id/rectangle_vehicles"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:background="@drawable/rectangle_3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_birth" />
+
+    <TextView
+        android:id="@+id/tvVehicles"
+        android:layout_width="246dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:letterSpacing="0.01"
+        android:text="@string/vehicles"
+        android:textColor="@color/text_dark"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_vehicles" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/vehicles"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rectangle_vehicles" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

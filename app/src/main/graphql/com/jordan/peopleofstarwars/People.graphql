@@ -1,0 +1,15 @@
+#query to get all people
+query PeopleList {
+    allPeople {
+        people {
+            id
+            name
+            homeworld {
+                name
+            }
+            species {
+                name
+            }
+        }
+    }
+}
